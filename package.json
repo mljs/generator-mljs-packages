@@ -4,9 +4,9 @@
   "description": "Generator for ml.js packages",
   "author": "Miguel Asencio <maasencioh@gmail.com> (https://github.com/maasencioh)",
   "files": [
-    "generators/app"
+    "app"
   ],
-  "main": "generators/app/index.js",
+  "main": "app/index.js",
   "keywords": [
     "machine",
     "learning",
