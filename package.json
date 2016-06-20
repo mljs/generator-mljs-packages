@@ -1,6 +1,6 @@
 {
   "name": "generator-mljs-packages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generator for ml.js packages",
   "author": "Miguel Asencio <maasencioh@gmail.com> (https://github.com/maasencioh)",
   "files": [
