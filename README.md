@@ -4,6 +4,7 @@
   [![Build Status][travis-image]][travis-url]
   [![Dependency Status][daviddm-image]][daviddm-url]
   [![Coverage percentage][coveralls-image]][coveralls-url]
+  [![npm download][download-image]][download-url]
 
 > Generator for ml.js packages
 
@@ -38,3 +39,5 @@ yo mljs-packages
 [daviddm-url]: https://david-dm.org/maasencioh/generator-mljs-packages
 [coveralls-image]: https://coveralls.io/repos/maasencioh/generator-mljs-packages/badge.svg
 [coveralls-url]: https://coveralls.io/r/maasencioh/generator-mljs-packages
+[download-image]: https://img.shields.io/npm/dm/generator-mljs-packages.svg?style=flat-square
+[download-url]: https://npmjs.org/package/generator-mljs-packages

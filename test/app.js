@@ -12,7 +12,15 @@ describe('generator-mljs-packages:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      '.gitignore',
+      '.travis.yml',
+      '.eslintrc.yml',
+      'src/index.js',
+      'test/test.js',
+      'History.md',
+      'LICENSE',
+      'package.json',
+      'README.md'
     ]);
   });
 });

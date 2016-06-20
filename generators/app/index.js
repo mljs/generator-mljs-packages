@@ -11,26 +11,58 @@ module.exports = yeoman.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'input',
+      name: 'name',
+      message: 'Your project name',
+      default: this.appname // Default to current folder name
+    }, {
+      type: 'input',
+      name: 'userName',
+      message: 'Your name'
+    }, {
+      type: 'input',
+      name: 'description',
+      message: 'Your package description'
+    }, {
+      type: 'input',
+      name: 'version',
+      message: 'Your package version',
+      default: '0.0.1'
     }];
 
     return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
+      // To access props later use this.props.name;
       this.props = props;
     }.bind(this));
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+    var includes = {
+      name: this.props.name,
+      userName: this.props.userName,
+      version: this.props.version,
+      description: this.props.description,
+      date: year + '-' + month + '-' + day,
+      year: year
+    };
+
+    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('.travis.yml'), this.destinationPath('.travis.yml'));
+    this.fs.copy(this.templatePath('.eslintrc.yml'), this.destinationPath('.eslintrc.yml'));
+    this.fs.copy(this.templatePath('src/index.js'), this.destinationPath('src/index.js'));
+    this.fs.copy(this.templatePath('test/test.js'), this.destinationPath('test/test.js'));
+
+    this.fs.copyTpl(this.templatePath('History.md'), this.destinationPath('History.md'), includes);
+    this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), includes);
+    this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), includes);
+    this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), includes);
   },
 
   install: function () {
-    this.installDependencies();
+    this.npmInstall();
   }
 });
