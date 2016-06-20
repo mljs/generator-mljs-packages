@@ -63,7 +63,7 @@ When the generator finish there will be the following files:
 [travis-url]: https://travis-ci.org/mljs/generator-mljs-packages
 [daviddm-image]: https://david-dm.org/mljs/generator-mljs-packages.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/mljs/generator-mljs-packages
-[coveralls-image]: https://coveralls.io/repos/mljs/generator-mljs-packages/badge.svg
-[coveralls-url]: https://coveralls.io/r/mljs/generator-mljs-packages
+[coveralls-image]: https://coveralls.io/repos/github/mljs/generator-mljs-packages/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/mljs/generator-mljs-packages?branch=master
 [download-image]: https://img.shields.io/npm/dm/generator-mljs-packages.svg?style=flat-square
 [download-url]: https://npmjs.org/package/generator-mljs-packages
