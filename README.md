@@ -33,11 +33,11 @@ yo mljs-packages
 
 [npm-image]: https://badge.fury.io/js/generator-mljs-packages.svg
 [npm-url]: https://npmjs.org/package/generator-mljs-packages
-[travis-image]: https://travis-ci.org/maasencioh/generator-mljs-packages.svg?branch=master
-[travis-url]: https://travis-ci.org/maasencioh/generator-mljs-packages
-[daviddm-image]: https://david-dm.org/maasencioh/generator-mljs-packages.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/maasencioh/generator-mljs-packages
-[coveralls-image]: https://coveralls.io/repos/maasencioh/generator-mljs-packages/badge.svg
-[coveralls-url]: https://coveralls.io/r/maasencioh/generator-mljs-packages
+[travis-image]: https://travis-ci.org/mljs/generator-mljs-packages.svg?branch=master
+[travis-url]: https://travis-ci.org/mljs/generator-mljs-packages
+[daviddm-image]: https://david-dm.org/mljs/generator-mljs-packages.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/mljs/generator-mljs-packages
+[coveralls-image]: https://coveralls.io/repos/mljs/generator-mljs-packages/badge.svg
+[coveralls-url]: https://coveralls.io/r/mljs/generator-mljs-packages
 [download-image]: https://img.shields.io/npm/dm/generator-mljs-packages.svg?style=flat-square
 [download-url]: https://npmjs.org/package/generator-mljs-packages
