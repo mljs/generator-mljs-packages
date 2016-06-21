@@ -2,13 +2,12 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var path = require('path');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the supreme ' + chalk.red('generator-mljs-packages') + ' generator!'
+      'Behold the almighty ' + chalk.red('generator-mljs-packages') + ' generator!'
     ));
 
     var prompts = [{
@@ -50,8 +49,6 @@ module.exports = yeoman.Base.extend({
       date: year + '-' + month + '-' + day,
       year: year
     };
-
-    this.sourceRoot(path.join(__dirname, '../templates'));
 
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
     this.fs.copy(this.templatePath('travis.yml'), this.destinationPath('.travis.yml'));
