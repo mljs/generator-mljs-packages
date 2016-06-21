@@ -3,9 +3,6 @@
   "version": "1.0.6",
   "description": "Generator for ml.js packages",
   "author": "Miguel Asencio <maasencioh@gmail.com> (https://github.com/maasencioh)",
-  "files": [
-    "app"
-  ],
   "main": "app/index.js",
   "keywords": [
     "machine",
