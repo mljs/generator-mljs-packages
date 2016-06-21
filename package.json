@@ -5,7 +5,10 @@
   "author": "Miguel Asencio <maasencioh@gmail.com> (https://github.com/maasencioh)",
   "files": [
     "app",
-    "app/templates"
+    "app/templates",
+    "app/templates/gitignore",
+    "app/templates/travis.yml",
+    "app/templates/eslintrc.yml"
   ],
   "main": "app/index.js",
   "keywords": [
