@@ -28,6 +28,10 @@ module.exports = yeoman.Base.extend({
       name: 'version',
       message: 'Your package version',
       default: '0.0.1'
+    }, {
+      type: 'confirm',
+      name: 'install',
+      message: 'Run NPM install?'
     }];
 
     return this.prompt(prompts).then(function (props) {
@@ -63,6 +67,8 @@ module.exports = yeoman.Base.extend({
   },
 
   install: function () {
-    this.npmInstall();
+    if (this.props.install) {
+      this.npmInstall();
+    }
   }
 });
