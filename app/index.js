@@ -57,9 +57,9 @@ module.exports = yeoman.Base.extend({
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
     this.fs.copy(this.templatePath('travis.yml'), this.destinationPath('.travis.yml'));
     this.fs.copy(this.templatePath('eslintrc.yml'), this.destinationPath('.eslintrc.yml'));
-    this.fs.write(this.destinationPath('src/index.js'), '\'use strict;\'');
-    this.fs.write(this.destinationPath('test/test.js'), '\'use strict;\'');
+    this.fs.copy(this.templatePath('index'), this.destinationPath('src/index.js'));
 
+    this.fs.copyTpl(this.templatePath('test'), this.destinationPath('test/test.js'), includes);
     this.fs.copyTpl(this.templatePath('History.md'), this.destinationPath('History.md'), includes);
     this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), includes);
     this.fs.copyTpl(this.templatePath('npm'), this.destinationPath('package.json'), includes);
