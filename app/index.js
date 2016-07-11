@@ -1,11 +1,11 @@
 'use strict';
-var child_process = require('child_process');
+var cp = require('child_process');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 
-var username = child_process.execSync('git config user.name').toString();
-var email = child_process.execSync('git config user.email').toString();
+var username = cp.execSync('git config user.name').toString();
+var email = cp.execSync('git config user.email').toString();
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
