@@ -4,8 +4,8 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 
-var username = child_process.execSync('git config user.name');
-var email = child_process.execSync('git config user.email');
+var username = child_process.execSync('git config user.name').toString();
+var email = child_process.execSync('git config user.email').toString();
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
