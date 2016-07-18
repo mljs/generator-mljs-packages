@@ -7,7 +7,7 @@
     "src"
   ],
   "scripts": {
-    "eslint": "eslint src",
+    "eslint": "eslint src test",
     "eslint-fix": "npm run eslint -- --fix",
     "test": "npm run test-mocha && npm run eslint",
     "test-mocha": "mocha --require should --reporter mocha-better-spec-reporter"
