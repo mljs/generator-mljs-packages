@@ -60,7 +60,6 @@ module.exports = yeoman.Base.extend({
     this.fs.write(this.destinationPath('src/index.js'), '\'use strict\';\n');
     this.fs.write(this.destinationPath('test/test.js'), '\'use strict\';\n');
 
-    this.fs.copyTpl(this.templatePath('History.md'), this.destinationPath('History.md'), includes);
     this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), includes);
     this.fs.copyTpl(this.templatePath('npm'), this.destinationPath('package.json'), includes);
     this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), includes);

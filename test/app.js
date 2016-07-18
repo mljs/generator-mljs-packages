@@ -20,7 +20,6 @@ describe('generator-mljs-packages:app', function () {
       '.eslintrc.yml',
       'src/index.js',
       'test/test.js',
-      'History.md',
       'LICENSE',
       'package.json',
       'README.md'
