@@ -1,3 +1,14 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/mljs/generator-mljs-packages/compare/v1.2.0...v1.3.0) (2016-07-18)
+
+
+### Features
+
+* bump dependency versions in template ([a799dc6](https://github.com/mljs/generator-mljs-packages/commit/a799dc6))
+* use eslint-config-cheminfo ([86f7c01](https://github.com/mljs/generator-mljs-packages/commit/86f7c01))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/mljs/generator-mljs-packages/compare/v1.1.0...v1.2.0) (2016-07-18)
 
