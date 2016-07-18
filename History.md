@@ -1,3 +1,18 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/mljs/generator-mljs-packages/compare/v1.3.0...v1.4.0) (2016-07-18)
+
+
+### Bug Fixes
+
+* remove History.md ([#5](https://github.com/mljs/generator-mljs-packages/issues/5)) ([40b927b](https://github.com/mljs/generator-mljs-packages/commit/40b927b))
+
+
+### Features
+
+* apply eslint to test directory ([58356ad](https://github.com/mljs/generator-mljs-packages/commit/58356ad))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/mljs/generator-mljs-packages/compare/v1.2.0...v1.3.0) (2016-07-18)
 
