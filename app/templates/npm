@@ -30,9 +30,9 @@
   },
   "homepage": "https://github.com/mljs/<%= name %>#readme",
   "devDependencies": {
-    "eslint": "^3.0.1",
+    "eslint": "^3.1.0",
     "mocha": "^2.5.3",
     "mocha-better-spec-reporter": "^3.0.2",
-    "should": "^9.0.2"
+    "should": "^10.0.0"
   }
 }
