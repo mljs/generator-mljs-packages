@@ -2,6 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var path = require('path');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
@@ -14,7 +15,7 @@ module.exports = yeoman.Base.extend({
       type: 'input',
       name: 'name',
       message: 'Your project name',
-      default: this.appname // Default to current folder name
+      default: path.basename(this.destinationRoot()) // Default to current folder name
     }, {
       type: 'input',
       name: 'userName',
