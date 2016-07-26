@@ -1,3 +1,14 @@
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/mljs/generator-mljs-packages/compare/v1.4.0...v1.4.1) (2016-07-26)
+
+
+### Bug Fixes
+
+* add peer dependency for eslint ([1a4eacb](https://github.com/mljs/generator-mljs-packages/commit/1a4eacb))
+* don't test on old and unsupported node ([a279cfc](https://github.com/mljs/generator-mljs-packages/commit/a279cfc))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/mljs/generator-mljs-packages/compare/v1.3.0...v1.4.0) (2016-07-18)
 
