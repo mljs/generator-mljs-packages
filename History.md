@@ -1,3 +1,18 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/mljs/generator-mljs-packages/compare/v1.4.1...v1.5.0) (2016-07-29)
+
+
+### Bug Fixes
+
+* keep dashes in package name ([beaff21](https://github.com/mljs/generator-mljs-packages/commit/beaff21))
+
+
+### Features
+
+* use git username by default ([22faddf](https://github.com/mljs/generator-mljs-packages/commit/22faddf))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/mljs/generator-mljs-packages/compare/v1.4.0...v1.4.1) (2016-07-26)
 
