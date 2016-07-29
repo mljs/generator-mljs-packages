@@ -1,8 +1,12 @@
 'use strict';
+var cp = require('child_process');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
+
+var username = cp.execSync('git config user.name').toString();
+var email = cp.execSync('git config user.email').toString();
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
@@ -19,7 +23,8 @@ module.exports = yeoman.Base.extend({
     }, {
       type: 'input',
       name: 'userName',
-      message: 'Your name'
+      message: 'Your name',
+      default: `${username.substring(0, username.length - 1)} <${email.substring(0, email.length - 1)}>`
     }, {
       type: 'input',
       name: 'description',
