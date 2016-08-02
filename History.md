@@ -1,3 +1,13 @@
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/mljs/generator-mljs-packages/compare/v1.5.0...v1.6.0) (2016-08-02)
+
+
+### Features
+
+* update mocha to v3.x ([8210299](https://github.com/mljs/generator-mljs-packages/commit/8210299))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/mljs/generator-mljs-packages/compare/v1.4.1...v1.5.0) (2016-07-29)
 
