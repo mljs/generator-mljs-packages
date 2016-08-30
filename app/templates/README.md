@@ -13,6 +13,8 @@
 $ npm install ml-<%= name %>
 ```
 
+## [API Documentation](https://mljs.github.io/<%= name %>/)
+
 ## License
 
 [MIT](./LICENSE)

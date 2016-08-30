@@ -1,0 +1,10 @@
+'use strict';
+
+var <%= name %> = require('..');
+
+describe('<%= name %> test', function () {
+
+    it('Something test', function () {
+
+    });
+});

@@ -65,11 +65,11 @@ module.exports = yeoman.Base.extend({
     this.fs.copy(this.templatePath('eslintrc.yml'), this.destinationPath('.eslintrc.yml'));
     this.fs.copy(this.templatePath('eslintrc.test.yml'), this.destinationPath('test/.eslintrc.yml'));
     this.fs.write(this.destinationPath('src/index.js'), '\'use strict\';\n');
-    this.fs.write(this.destinationPath('test/test.js'), '\'use strict\';\n');
 
     this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), includes);
     this.fs.copyTpl(this.templatePath('npm'), this.destinationPath('package.json'), includes);
     this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), includes);
+    this.fs.copyTpl(this.templatePath('test'), this.destinationPath('test/test.js'), includes);
   },
 
   install: function () {
