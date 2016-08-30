@@ -1,3 +1,13 @@
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/mljs/generator-mljs-packages/compare/v1.7.0...v1.8.0) (2016-08-30)
+
+
+### Features
+
+* **test:** add the tonic file, and add the camel case name to test and index ([a498d72](https://github.com/mljs/generator-mljs-packages/commit/a498d72))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/mljs/generator-mljs-packages/compare/v1.6.0...v1.7.0) (2016-08-30)
 
