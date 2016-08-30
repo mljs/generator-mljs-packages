@@ -1,3 +1,13 @@
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/mljs/generator-mljs-packages/compare/v1.6.0...v1.7.0) (2016-08-30)
+
+
+### Features
+
+* **test:** create empty test template ([bafbde0](https://github.com/mljs/generator-mljs-packages/commit/bafbde0))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/mljs/generator-mljs-packages/compare/v1.5.0...v1.6.0) (2016-08-02)
 
