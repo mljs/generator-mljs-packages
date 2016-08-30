@@ -8,6 +8,8 @@ var path = require('path');
 var username = cp.execSync('git config user.name').toString();
 var email = cp.execSync('git config user.email').toString();
 
+var camelCase = require('camelcase');
+
 module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
@@ -51,25 +53,28 @@ module.exports = yeoman.Base.extend({
     var day = date.getDate();
     var month = date.getMonth();
     var year = date.getFullYear();
+    var camelName = camelCase(this.props.name);
     var includes = {
       name: this.props.name,
       userName: this.props.userName,
       version: this.props.version,
       description: this.props.description,
       date: year + '-' + month + '-' + day,
-      year: year
+      year: year,
+      camelName: camelName
     };
 
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
     this.fs.copy(this.templatePath('travis.yml'), this.destinationPath('.travis.yml'));
     this.fs.copy(this.templatePath('eslintrc.yml'), this.destinationPath('.eslintrc.yml'));
     this.fs.copy(this.templatePath('eslintrc.test.yml'), this.destinationPath('test/.eslintrc.yml'));
-    this.fs.write(this.destinationPath('src/index.js'), '\'use strict\';\n');
 
     this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), includes);
     this.fs.copyTpl(this.templatePath('npm'), this.destinationPath('package.json'), includes);
     this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), includes);
     this.fs.copyTpl(this.templatePath('test'), this.destinationPath('test/test.js'), includes);
+    this.fs.copyTpl(this.templatePath('index'), this.destinationPath('src/index.js'), includes);
+    this.fs.copyTpl(this.templatePath('tonic'), this.destinationPath('tonic.js'), includes);
   },
 
   install: function () {

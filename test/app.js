@@ -22,6 +22,7 @@ describe('generator-mljs-packages:app', function () {
       'test/test.js',
       'LICENSE',
       'package.json',
+      'tonic.js',
       'README.md'
     ]);
   });

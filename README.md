@@ -44,6 +44,7 @@ When the generator finish there will be the following files:
 ├── LICENSE
 ├── README.md
 ├── package.json
+├── tonic.js
 ├── src
 │   └── index.js
 └── test
