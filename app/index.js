@@ -1,4 +1,5 @@
 'use strict';
+
 var cp = require('child_process');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
