@@ -1,3 +1,13 @@
+<a name="1.8.1"></a>
+## [1.8.1](https://github.com/mljs/generator-mljs-packages/compare/v1.8.0...v1.8.1) (2016-09-06)
+
+
+### Bug Fixes
+
+* notify when git config fails ([20570c9](https://github.com/mljs/generator-mljs-packages/commit/20570c9))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/mljs/generator-mljs-packages/compare/v1.7.0...v1.8.0) (2016-08-30)
 
