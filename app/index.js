@@ -5,8 +5,16 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
 
-var username = cp.execSync('git config user.name').toString();
-var email = cp.execSync('git config user.email').toString();
+var username;
+var email;
+try {
+  username = cp.execSync('git config user.name').toString();
+  email = cp.execSync('git config user.email').toString();
+} catch (e) {
+  console.error('Missing git configuration');
+  username = ' ';
+  email = ' ';
+}
 
 var camelCase = require('camelcase');
 
@@ -14,7 +22,7 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Behold the almighty ' + chalk.red('generator-mljs-packages') + ' generator!'
+      `Behold the almighty ${chalk.red('generator-mljs-packages')} generator!`
     ));
 
     var prompts = [{
