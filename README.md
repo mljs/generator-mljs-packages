@@ -31,6 +31,7 @@ The generator will prompt for the next fields:
   * __Your name__: your [NPM name](https://docs.npmjs.com/files/package.json#people-fields-author-contributors)
   * __Your package description__: A description to show in [NPM](https://docs.npmjs.com/files/package.json#description-1)
   * __Your package version__: The package version. The default value is `0.0.1`
+  * __Do you want to install coverage tool?__: Add the coveralls badge and scripts. The default value is `false`
   * __Run NPM install?__: Run `npm install` after the template generation
 
 When the generator finish there will be the following files:

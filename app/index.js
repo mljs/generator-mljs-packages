@@ -6,15 +6,15 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const path = require('path');
 
-var username;
-var email;
+let username = ' ';
+let email = ' ';
+
 try {
   username = cp.execSync('git config user.name').toString();
   email = cp.execSync('git config user.email').toString();
 } catch (e) {
+  /* istanbul ignore next */
   console.error('Missing git configuration');
-  username = ' ';
-  email = ' ';
 }
 
 const camelCase = require('camelcase');
@@ -93,6 +93,7 @@ module.exports = yeoman.Base.extend({
   },
 
   install: function () {
+    /* istanbul ignore else  */
     if (this.props.install) {
       this.npmInstall();
     }
