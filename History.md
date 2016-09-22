@@ -1,3 +1,13 @@
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/mljs/generator-mljs-packages/compare/v1.8.1...v1.9.0) (2016-09-22)
+
+
+### Features
+
+* add coverage options ([06ea7d1](https://github.com/mljs/generator-mljs-packages/commit/06ea7d1))
+
+
+
 <a name="1.8.1"></a>
 ## [1.8.1](https://github.com/mljs/generator-mljs-packages/compare/v1.8.0...v1.8.1) (2016-09-06)
 
