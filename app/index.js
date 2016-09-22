@@ -1,10 +1,10 @@
 'use strict';
 
-var cp = require('child_process');
-var yeoman = require('yeoman-generator');
-var chalk = require('chalk');
-var yosay = require('yosay');
-var path = require('path');
+const cp = require('child_process');
+const yeoman = require('yeoman-generator');
+const chalk = require('chalk');
+const yosay = require('yosay');
+const path = require('path');
 
 var username;
 var email;
@@ -17,7 +17,7 @@ try {
   email = ' ';
 }
 
-var camelCase = require('camelcase');
+const camelCase = require('camelcase');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
@@ -47,6 +47,11 @@ module.exports = yeoman.Base.extend({
       default: '0.0.1'
     }, {
       type: 'confirm',
+      name: 'coveralls',
+      message: 'Do you want to install coverage tool?',
+      default: false
+    }, {
+      type: 'confirm',
       name: 'install',
       message: 'Run NPM install?'
     }];
@@ -70,7 +75,8 @@ module.exports = yeoman.Base.extend({
       description: this.props.description,
       date: year + '-' + month + '-' + day,
       year: year,
-      camelName: camelName
+      camelName: camelName,
+      coveralls: this.props.coveralls
     };
 
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
