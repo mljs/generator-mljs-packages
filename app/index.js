@@ -80,7 +80,6 @@ module.exports = yeoman.Base.extend({
     };
 
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
-    this.fs.copy(this.templatePath('travis.yml'), this.destinationPath('.travis.yml'));
     this.fs.copy(this.templatePath('eslintrc.yml'), this.destinationPath('.eslintrc.yml'));
     this.fs.copy(this.templatePath('eslintrc.test.yml'), this.destinationPath('test/.eslintrc.yml'));
 
@@ -90,6 +89,7 @@ module.exports = yeoman.Base.extend({
     this.fs.copyTpl(this.templatePath('test'), this.destinationPath('test/test.js'), includes);
     this.fs.copyTpl(this.templatePath('index'), this.destinationPath('src/index.js'), includes);
     this.fs.copyTpl(this.templatePath('tonic'), this.destinationPath('tonic.js'), includes);
+    this.fs.copyTpl(this.templatePath('travis.yml'), this.destinationPath('.travis.yml'), includes);
   },
 
   install: function () {
