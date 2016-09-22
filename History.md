@@ -1,3 +1,13 @@
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/mljs/generator-mljs-packages/compare/v1.9.0...v1.9.1) (2016-09-22)
+
+
+### Bug Fixes
+
+* trail space after coverage ([4fe637a](https://github.com/mljs/generator-mljs-packages/commit/4fe637a))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/mljs/generator-mljs-packages/compare/v1.8.1...v1.9.0) (2016-09-22)
 
