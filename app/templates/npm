@@ -25,7 +25,7 @@
     "mining",
     "datamining"
   ],
-  "author": "<%= userName %>",
+  "author": "<%= userName %> <<%= email %>> (https://github.com/<%= userName %>)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mljs/<%= name %>/issues"

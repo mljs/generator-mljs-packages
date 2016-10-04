@@ -29,6 +29,7 @@ The generator will prompt for the next fields:
 
   * __Your project name__: the package name, without the `ml-` start
   * __Your name__: your [NPM name](https://docs.npmjs.com/files/package.json#people-fields-author-contributors)
+  * __Your email__: your email
   * __Your package description__: A description to show in [NPM](https://docs.npmjs.com/files/package.json#description-1)
   * __Your package version__: The package version. The default value is `0.0.1`
   * __Do you want to install coverage tool?__: Add the coveralls badge and scripts. The default value is `false`
