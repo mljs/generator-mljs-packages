@@ -35,7 +35,7 @@ module.exports = yeoman.Base.extend({
       type: 'input',
       name: 'userName',
       message: 'Your name',
-      default: `${username.substring(0, username.length - 1)} <${email.substring(0, email.length - 1)}>`
+      default: `${username.substring(0, username.length - 1)} \<${email.substring(0, email.length - 1)}\> \(https:\/\/github.com\/${username.substring(0, username.length - 1)}\)`
     }, {
       type: 'input',
       name: 'description',
