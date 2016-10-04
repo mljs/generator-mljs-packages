@@ -1,3 +1,13 @@
+<a name="1.9.2"></a>
+## [1.9.2](https://github.com/mljs/generator-mljs-packages/compare/v1.9.1...v1.9.2) (2016-10-04)
+
+
+### Bug Fixes
+
+* good rendering of the username and add url link as npm describes ([5388526](https://github.com/mljs/generator-mljs-packages/commit/5388526)), closes [#9](https://github.com/mljs/generator-mljs-packages/issues/9)
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/mljs/generator-mljs-packages/compare/v1.9.0...v1.9.1) (2016-09-22)
 
