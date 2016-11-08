@@ -1,3 +1,8 @@
+<a name="1.9.4"></a>
+## [1.9.4](https://github.com/mljs/generator-mljs-packages/compare/v1.9.3...v1.9.4) (2016-11-08)
+
+
+
 <a name="1.9.3"></a>
 ## [1.9.3](https://github.com/mljs/generator-mljs-packages/compare/v1.9.2...v1.9.3) (2016-10-04)
 
