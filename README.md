@@ -8,20 +8,9 @@
 
 > Generator for ml.js packages
 
-## Installation
+## :warning: Deprecated!
 
-First, install [Yeoman](http://yeoman.io) and generator-mljs-packages using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
-
-```bash
-npm install -g yo
-npm install -g generator-mljs-packages
-```
-
-Then generate your new project:
-
-```bash
-yo mljs-packages
-```
+Instead you should use [generator-cheminfo](https://github.com/cheminfo/generator-cheminfo), it's the modern version of this package
 
 ## Description
 
